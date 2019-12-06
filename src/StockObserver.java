@@ -1,8 +1,8 @@
 
-public class StockObserver implements Observer {
+public class StockObserver implements ObserverI {
 	private double ibmPrice;
 	private double aaplPrice;
-	private double googlePrice;
+	private double googPrice;
 
 	private static int observerIDTracker = 0;
 
@@ -23,7 +23,7 @@ public class StockObserver implements Observer {
 		// TODO Auto-generated method stub
 		this.ibmPrice = ibmPrice;
 		this.aaplPrice = aaplPrice;
-		this.googlePrice = googPrice;
+		this.googPrice = googPrice;
 
 		printThePrices();
 
